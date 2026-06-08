@@ -1,0 +1,650 @@
+/* ========= Welcome ============ */
+
+.welcome {
+  box-sizing: border-box;
+  min-height: 100vh;
+
+  margin-top: -100px;
+  padding: 240px 0;
+
+  background-image: url(images/welcome-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.welcome-text {
+  width: 47%;
+}
+
+.welcome-content {
+  animation: welcome-text-from-left 0.8s ease-out forwards;
+}
+
+.welcome-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-bottom: 7px;
+}
+
+.welcome-title {
+  font-weight: 500;
+  font-size: 56px;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.welcome-desk {
+  margin: 40px 0;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+@keyframes welcome-text-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* =================== Food List ================== */
+
+.food-list {
+  padding: 100px 0;
+}
+
+.food-list-card {
+  width: 250px;
+  border-radius: 10px;
+  background-color: #312f30;
+  overflow: hidden;
+  text-align: center;
+}
+
+.food-list .food-list-img:hover {
+    transform: scale(1.05)
+}
+
+.food-list .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px 10px;
+}
+
+.food-list-img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  transition: 0.2s;
+}
+
+.food-list-title {
+  font-size: 20px;
+  margin-bottom: 13px;
+}
+
+.food-list-text-wraper {
+  padding: 30px 20px;
+}
+
+.food-list-text {
+  font-size: 16px;
+  line-height: 19px;
+  opacity: 0.7;
+}
+
+/* ================= Order =================== */
+
+.order {
+  background-color: #312f30;
+  padding: 60px 0;
+}
+
+.order .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-image {
+  max-width: 470px;
+  transition: 0.5s;
+}
+
+.order-image:hover {
+  transform: rotate(4deg) scale(1.05);
+}
+
+.order-text {
+  max-width: 370px;
+  padding-right: 90px;
+}
+
+.order-title {
+  font-size: 44px;
+  margin-bottom: 25px;
+}
+
+.order-desc {
+  font-size: 16px;
+  line-height: 19px;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.order-price {
+  font-weight: 500;
+  font-size: 20px;
+  color: #f6762c;
+
+  letter-spacing: 0.1em;
+}
+
+.order-old-price {
+  font-size: 16px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.order .btn {
+  margin-top: 10px;
+}
+
+/* ================ Product ==================== */
+
+.product {
+  padding: 150px 150px;
+}
+
+.product .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.product-card {
+  background-color: #4c4649;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 555px;
+  min-height: 300px;
+  padding: 60px 25px 60px 290px;
+}
+
+.product-card:nth-child(even) {
+  padding: 60px 290px 60px 25px;
+}
+
+.product-queen {
+  background-image: url(images/product-1.jpg);
+}
+
+.product-hut {
+  background-image: url(images/product-2.jpg);
+}
+
+.product-king {
+  background-image: url(images/product-3.jpg);
+}
+
+.product-john {
+  background-image: url(images/product-4.jpg);
+}
+
+.product-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.product-disc {
+  margin-bottom: 10px;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.product-price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #f6762c;
+}
+
+.product-price + .product-price {
+  margin-left: 5px;
+}
+
+.product-old-price {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.product-btn {
+  margin-top: 10px;
+
+  width: 140px;
+  height: 40px;
+
+  font-size: 12px;
+}
+
+/* =============== Feedback ================== */
+
+.feedback {
+  padding-bottom: 200px;
+}
+
+.feedback .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 880px;
+}
+
+.feedback-text {
+  margin: 0;
+  text-align: center;
+  width: 370px;
+  padding-top: 100px;
+}
+
+.feedback-text::before {
+  content: url("/images/icons/quote.svg");
+}
+
+.feedback-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 30px 0;
+
+  opacity: 0.7;
+}
+
+.feedback-author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  display: block;
+}
+
+.feedback-sub {
+  font-weight: 500;
+  font-size: 12px;
+
+  opacity: 0.7;
+}
+
+/* ==================== Download =================== */
+
+.download {
+  padding: 60px 0;
+  background-color: #312f30;
+}
+
+.download .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.download-text {
+  font-size: 40px;
+}
+
+/* ================= Footer ============================ */
+
+.footer {
+  padding: 120px 0;
+}
+
+.list-item {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.list-item:hover {
+  opacity: 0.9;
+}
+
+.footer .footer-title {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.footer li a {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.footer-nav-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-socials-link + .footer-socials-link {
+  margin-left: 10px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  display: inline-block;
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.footer-link + .footer-link {
+  margin-bottom: 10px;
+}
+
+.footer-link::before {
+  width: 30px;
+}
+
+.link-mail::before {
+  content: url("./images/icons/mail.svg");
+  margin-right: 10px;
+}
+
+.link-web::before {
+  content: url("./images/icons/global.svg");
+  margin-right: 10px;
+}
+
+/* ========== Основные медиа-запросы (дополненные) ========== */
+
+/* Планшеты и небольшие ноутбуки (до 1100px) */
+@media (max-width: 1100px) {
+  .product {
+    padding: 100px 50px;
+  }
+
+  .product-card {
+    width: 450px;
+    padding: 40px 20px 40px 200px;
+  }
+
+  .product-card:nth-child(even) {
+    padding: 40px 200px 40px 20px;
+  }
+}
+
+/* Планшеты (до 900px) */
+@media (max-width: 900px) {
+  .welcome {
+    padding: 140px 0;
+  }
+
+  .welcome-text {
+    width: 60%;
+  }
+
+  .welcome-title {
+    font-size: 42px;
+  }
+
+  .order .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .order-text {
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .order .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .order-image {
+    max-width: 400px;
+  }
+
+  .feedback .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feedback-text {
+    padding-top: 50px;
+  }
+
+  .feedback-img {
+    margin-bottom: 30px;
+  }
+
+  .download-text {
+    font-size: 32px;
+  }
+}
+
+/* Планшеты (до 850px) */
+@media (max-width: 850px) {
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "nav nav"
+      "contacts socials";
+    justify-items: center;
+    gap: 20px 150px;
+  }
+
+  .footer-contact {
+    grid-area: contacts;
+    justify-self: end;
+  }
+
+  .footer-socials {
+    grid-area: socials;
+    align-self: center;
+  }
+
+  .footer-nav {
+    grid-area: nav;
+  }
+
+  .footer-nav-list {
+    gap: 50px;
+  }
+}
+
+/* Планшеты (до 800px) */
+@media (max-width: 800px) {
+  .food-list .container {
+    justify-content: space-evenly;
+  }
+
+  .order-image {
+    max-width: 350px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 550px;
+    padding: 250px 25px 40px 25px;
+    background-position: top;
+  }
+
+  .product-card:nth-child(even) {
+    padding: 250px 25px 40px 25px;
+  }
+}
+
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+  .welcome {
+    padding: 120px 0;
+    text-align: center;
+  }
+
+  .welcome-text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .welcome-title {
+    font-size: 36px;
+  }
+
+  .welcome-desk {
+    font-size: 16px;
+    margin: 30px 0;
+  }
+
+  .welcome .btn {
+    margin: 0 auto;
+  }
+
+  .food-list {
+    padding: 60px 0;
+  }
+
+  .food-list-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .product {
+    padding: 60px 15px;
+  }
+
+  .product-title {
+    font-size: 24px;
+  }
+
+  .download .container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .download-text {
+    font-size: 28px;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+}
+
+/* Маленькие мобильные устройства (до 600px) */
+@media (max-width: 600px) {
+  .footer .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "nav"
+      "contacts"
+      "socials";
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-contacts {
+    align-items: center;
+    grid-area: contacts;
+    justify-self: center;
+  }
+
+  .footer-socials {
+    grid-area: socials;
+    justify-self: center;
+  }
+
+  .footer-nav-list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-title {
+    margin-bottom: 10px;
+  }
+
+  .footer-inner-list li {
+    margin-bottom: 10px;
+  }
+
+  .feedback-text {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .feedback-img {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+/* Очень маленькие мобильные устройства (до 480px) */
+@media (max-width: 480px) {
+  .welcome-title {
+    font-size: 28px;
+  }
+
+  .welcome-subtitle {
+    font-size: 12px;
+  }
+
+  .order-title {
+    font-size: 32px;
+  }
+
+  .order-image {
+    max-width: 280px;
+  }
+
+  .product-card {
+    min-height: auto;
+    padding: 200px 20px 30px 20px;
+  }
+
+  .product-card:nth-child(even) {
+    padding: 200px 20px 30px 20px;
+  }
+
+  .product-title {
+    font-size: 22px;
+  }
+
+  .download-text {
+    font-size: 24px;
+  }
+
+  .btn {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^14.0.0"
+  }
+}
